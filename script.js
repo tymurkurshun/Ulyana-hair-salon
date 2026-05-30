@@ -16,19 +16,10 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 reveals.forEach(el => revealObserver.observe(el));
 
-// ── CONTACT FORM: send via EmailJS ──
-// SETUP INSTRUCTIONS (free, 5 min):
-// 1. Go to https://www.emailjs.com and create a free account
-// 2. Add an Email Service (Gmail) → copy the Service ID
-// 3. Create an Email Template with these variables:
-//    {{from_name}}, {{from_contact}}, {{service}}, {{preferred_date}}, {{hair_info}}
-//    Set "To email" = timurcecel@gmail.com
-// 4. Copy your Template ID and Public Key
-// 5. Replace the three placeholders below with your actual values
 
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abc123XYZ'
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_xxxxxx'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xxxxxx'
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';    
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  
 
 const submitBtn = document.querySelector('.submit-btn');
 const formMsg   = document.querySelector('.form-msg');
